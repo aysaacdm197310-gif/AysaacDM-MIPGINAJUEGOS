@@ -542,7 +542,6 @@ transform:translateY(0);
   font-weight:600;
 }
 
-}
 
 /* TEXTO */
 .overlay h4{
@@ -599,8 +598,43 @@ cursor:url('images/cursor-click.png') 16 16, pointer;
   100%{transform: scale(1);}
 }
 
-/* ARREGLAR BOTON YOUTUBE */
-.btn.btn-games{
-  background: linear-gradient(45deg, #ff0000, #ff4d4d) !important;
-  color: white !important;
+
+/* BOTON YOUTUBE (NO ROMPE TU CSS) */
+.game-card .info .btn-yt{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  margin-top:10px;
+  padding:10px 20px;
+
+  background:linear-gradient(45deg,#ff0000,#ff4d4d);
+  color:white;
+
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+
+  border:1px solid rgba(255,0,0,0.6);
+
+  box-shadow:
+    0 0 10px red,
+    0 0 20px rgba(255,0,0,0.6);
+
+  transition:all .3s ease;
+}
+
+/* HOVER */
+.game-card .info .btn-yt:hover{
+  transform:scale(1.08);
+  background:linear-gradient(45deg,#ff1a1a,#ff6666);
+
+  box-shadow:
+    0 0 20px red,
+    0 0 40px rgba(255,0,0,0.8);
+}
+
+.info p{
+  margin-bottom:20px;
 }
